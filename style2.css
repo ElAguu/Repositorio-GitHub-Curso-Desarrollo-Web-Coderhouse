@@ -1,0 +1,146 @@
+/* Mobile and tablet style */
+@media only screen and (max-width: 960px) {
+    .titulo-seccion p {
+        margin-top: 10px;
+        letter-spacing: 15px !important;
+        font-size: 0.9em !important;
+        margin-bottom: 30px;
+    }
+}
+
+/* Menú de navegación */
+.menu1 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Atributos de los links del menú de navegación */
+.menu1 li span, .menu1 li a {
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    margin: 10px 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* Menú drop-down */
+.dropdown-menu1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.850);
+    list-style: none;
+    top: 0px;
+    padding-left: 0px;
+    padding-top: 40px;
+}
+
+/* Atributos de los links del menú drop-down */
+.dropdown-menu1 li {
+    text-align: center;
+    padding: 0px 10px;
+    margin: 0px;
+    border-bottom: 1px solid  rgba(181, 4, 19, 0.550);
+}
+
+.dropdown1 {
+    position: relative;
+}
+
+.dropdown-menu1 li:last-of-type {
+    border-bottom: none;
+}
+
+.dropdown1 span {
+    position: relative;
+}
+
+.dropdown-menu1 {
+    display: none;
+}
+
+.dropdown1:hover .dropdown-menu1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu1 li span:hover, .menu1 li a:hover {
+    color:  rgb(181, 4, 19);
+}
+
+.menu1 li span {
+    z-index: 2;
+}
+
+.imagen-principal {
+    position: relative;
+}
+/* Fin del menú de navegación */
+
+/* Acordeón de información de habitaciones y excursiones */
+.accordion-flush {
+    background-color: rgb(255, 255, 255);
+}
+
+.accordion-button {
+    letter-spacing: 3px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(181, 4, 19);
+    background-color: rgb(235, 235, 235);
+}
+
+.container-fluid {
+    filter: drop-shadow(4px 4px 10px rgba(48, 22, 24, 0.267));
+}
+/* Fin de acordeón de información de habitaciones y excursiones */
+
+/* Propiedades de los íconos de valoración */
+.valoracion {
+    margin: 50px 100px;
+}
+
+/* Contenedor de la sección contacto */
+.container-contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Sub contenedores de la sección contacto */
+.sub-container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    width: 400px;
+}
+
+/* Estilo del texto de la sección contacto */
+.sub-container-contacto p {
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 20px;
+    color: rgb(181, 4, 19);
+}
+
+/* Hover con transformaciones a los íconos */
+.sub-container-contacto a img:hover, .valoracion:hover {
+    transform: scale(1.2);
+    transition: 0.5s linear all;
+}
+
+footer {
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 100px 0px;
+}
